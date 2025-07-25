@@ -7,10 +7,13 @@
 </head>
 <body>
   <h1>SkinScope AI</h1>
-  <img src="{{ url_for('static', filename='uploads/' + image) }}"
-       alt="Your uploaded skin photo"
-       style="max-width:300px; border:1px solid #ccc; margin-bottom:20px;" />
-  <p>Your diagnosis: <strong>{{ diagnosis }}</strong></p>
-  <p><a href="{{ url_for('home') }}">← Try another photo</a></p>
+  <div class="result-card">
+    <img src="{{ url_for('static', filename='uploads/' + image) }}"
+         alt="Your uploaded skin photo" />
+    <p class="diagnosis">{{ diagnosis }}</p>
+  </div>
+  <p style="text-align:center; margin-top:20px;">
+    <a href="{{ url_for('home') }}">← Try another photo</a>
+  </p>
 </body>
 </html>

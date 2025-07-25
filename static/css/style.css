@@ -1,17 +1,76 @@
+:root {
+  --brown:        #8B5E3C;
+  --ivory:        #F5F0E1;
+  --red:          #B22222;
+  --grey:         #6E6E6E;
+  --forest-green:#228B22;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  background: var(--ivory);
+  color: var(--grey);
+  font-family: 'Roboto', sans-serif;
   margin: 40px;
-  background: #f0f0f0;
 }
+
+h1, h2 {
+  color: var(--forest-green);
+  margin-bottom: 20px;
+}
+
 h1 {
-  color: #333;
+  font-size: 2.5em;
 }
+
+h2 {
+  font-size: 1.8em;
+}
+
 form {
-  background: #fff;
+  background: white;
+  border: 2px solid var(--brown);
   padding: 20px;
   border-radius: 8px;
+  max-width: 400px;
+  margin: auto;
 }
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
 button {
+  background: var(--red);
+  color: white;
+  border: none;
   padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1em;
   cursor: pointer;
+}
+
+button:hover {
+  background: #8B1A1A;
+}
+
+.result-card {
+  background: white;
+  border: 2px solid var(--forest-green);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.result-card img {
+  border: 4px solid var(--brown);
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+.diagnosis {
+  font-size: 1.5em;
+  color: var(--red);
+  margin-top: 15px;
 }
